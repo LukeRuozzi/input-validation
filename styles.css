@@ -30,18 +30,19 @@ form input {
   --valid-color: rgb(94, 226, 94);
 }
 
-.field input {
-  outline: none;
-}
-
 .tick {
-  color: #fff;
+  transition: all ease-in .2s;
+  opacity: 0;
+  transform: translateY(10px);
 }
 
 .field-valid input {
   border-color: var(--valid-color);
+  outline-color: var(--valid-color);
 }
 
 .field-valid .tick {
+  opacity: 1;
+  transform: translateY(0);
   color: var(--valid-color);
 }
