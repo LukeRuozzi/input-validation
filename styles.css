@@ -30,8 +30,16 @@ form input {
   --valid-color: rgb(57, 185, 57);
 }
 
-.field-valid input:focus-visible {
-  border-color: var(--valid-color) !important;
+.field input {
+  outline: none;
+}
+
+.tick {
+  color: #fff;
+}
+
+.field-valid input {
+  border-color: var(--valid-color);
 }
 
 .field-valid .tick {
